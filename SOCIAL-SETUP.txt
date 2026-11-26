@@ -1,0 +1,17 @@
+SHOW INSTAGRAM AND FACEBOOK POSTS ON YOUR WEBSITE AUTOMATICALLY
+
+Needs: the website online on PHP hosting, an Instagram Business or Creator account,
+and a Facebook Page that you manage. A web developer can do these steps in about an hour.
+Meta changes its screens often, so follow their current instructions.
+
+1. Create a developer app at https://developers.facebook.com/apps
+2. Instagram: add the "Instagram API with Instagram Login" product, add your own account,
+   and generate a long-lived access token (permission: instagram_business_basic).
+3. Facebook: get your Page ID and a long-lived PAGE access token
+   (permissions: pages_read_engagement, pages_read_user_content).
+4. Website admin > Journal and social > paste the values > "Connect and fetch posts".
+
+The site checks for new posts about every 30 minutes when someone visits.
+It renews the Instagram token weekly, as long as the site gets at least one visit every few weeks.
+If posts stop, open the admin page to read the error message.
+Never share these tokens with anyone.
